@@ -15,10 +15,8 @@ public class Programm {
 		switch(tarifArt) {
 			case 2:
 				tarifRechner = new TarifrechnerPremium();
-				break;
 			case 3:
 				tarifRechner = new TarifrechnerFirmenkunden();
-				break;
 			default: 
 				tarifRechner = new Tarifrechner();
 		}
