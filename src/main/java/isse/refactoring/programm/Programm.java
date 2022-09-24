@@ -15,6 +15,6 @@ public class Programm {
 				return tarifRechner.berechneFirmenkundenTarif(leistung);
 			default: 
 				return tarifRechner.berechneBusinessTarif(leistung);
-		}	
+		}
 	}
 }
