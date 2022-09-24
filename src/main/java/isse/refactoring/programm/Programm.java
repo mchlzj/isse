@@ -2,19 +2,26 @@ package isse.refactoring.programm;
 
 import java.util.Scanner;
 
+import isse.refactoring.programm.tarife.TarifrechnerPremium;
+import isse.refactoring.programm.tarife.Tarifrechner;
+import isse.refactoring.programm.tarife.TarifrechnerFirmenkunden;
+
 public class Programm {
 	
 	public Double berechneTarif(int tarifArt, Double leistung) {
 		
-		Tarifrechner tarifRechner = new Tarifrechner();
+		Tarifrechner tarifRechner;
 		
 		switch(tarifArt) {
 			case 2:
-				return tarifRechner.berechnePremiumTarif(leistung);
+				tarifRechner = new TarifrechnerPremium();
+				break;
 			case 3:
-				return tarifRechner.berechneFirmenkundenTarif(leistung);
+				tarifRechner = new TarifrechnerFirmenkunden();
+				break;
 			default: 
-				return tarifRechner.berechneBusinessTarif(leistung);
+				tarifRechner = new Tarifrechner();
 		}
+		return tarifRechner.berechneTarif(leistung);
 	}
 }

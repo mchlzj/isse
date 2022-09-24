@@ -3,7 +3,7 @@ package isse.refactoring;
 import java.util.Scanner;
 
 import isse.refactoring.programm.Programm;
-import isse.refactoring.programm.Tarifrechner;
+import isse.refactoring.programm.tarife.Tarifrechner;
 
 public class App {
 
