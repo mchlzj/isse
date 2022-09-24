@@ -3,6 +3,8 @@ package isse.refactoring.programm;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import isse.refactoring.programm.tarife.Tarifrechner;
+
 public class TarifrechnerTest {
 
 	@Test
