@@ -2,7 +2,7 @@ package isse.refactoring.programm;
 
 public class Tarifrechner {
 
-	double MWST = 0.19;
+	Double MWST = 0.19;
 	
 	public Double berechneBusinessTarif(Double leistung) {
 		return leistung+ (leistung*MWST);

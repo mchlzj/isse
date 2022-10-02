@@ -7,19 +7,43 @@ public class ProgrammTest {
 
 	
 	@Test
-	public void sollteBeiAuswahl1NormalenTarifBerechnen() {
+	public void sollteBeiAuswahl1BusinessTarifBerechnen() {
 		Programm programm = new Programm();
-		Assertions.assertEquals(programm.berechneTarif(1,100.00), 119.00);
+		
+		//GIVEN
+		Double leistungshoehe = 100.00;
+		
+		//WHEN
+		Integer businessTarif = 1;
+		
+		//THEN
+		Assertions.assertEquals(programm.berechneTarif(businessTarif,leistungshoehe), 119.00);
 	}
 	
 	@Test
 	public void sollteBeiAuswahl2PresmiumTarifBerechnen() {
 		Programm programm = new Programm();
-		Assertions.assertEquals(programm.berechneTarif(2, 100.00), 107.10);
+		
+		//GIVEN
+		Double leistungshoehe = 100.00;
+		
+		//WHEN
+		Integer premiumTarif = 2;
+		
+		//THEN
+		Assertions.assertEquals(programm.berechneTarif(premiumTarif, leistungshoehe), 107.10);
 	}
 	
 	@Test void sollteBeiAuswahl3FirmenkundenTarifBerechnen() {
 		Programm programm = new Programm();
-		Assertions.assertEquals(programm.berechneTarif(3, 100.00), 95.20);
+		
+		//GIVEN
+		Double leistungshoehe = 100.00;
+		
+		//WHEN
+		Integer firmenkundenTarif = 3;
+		
+		//THEN
+		Assertions.assertEquals(programm.berechneTarif(firmenkundenTarif, leistungshoehe), 95.20);
 	}
 }

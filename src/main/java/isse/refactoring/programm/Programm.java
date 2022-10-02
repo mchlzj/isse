@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Programm {
 	
-	public Double berechneTarif(int tarifArt, Double leistung) {
+	public Double berechneTarif(Integer tarifArt, Double leistung) {
 		
 		Tarifrechner tarifRechner = new Tarifrechner();
 		
