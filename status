@@ -1,0 +1,19 @@
+user.email=mchlzj@gmail.com
+user.name=mchlzj
+credential.helper=cache --timeout=2880000
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/mchlzj/isse.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.quellcode1.remote=origin
+branch.quellcode1.merge=refs/heads/quellcode1
+branch.quellcode1.1.remote=origin
+branch.quellcode1.1.merge=refs/heads/quellcode1.1
+branch.quellcode1.2.remote=origin
+branch.quellcode1.2.merge=refs/heads/quellcode1.2
+branch.quellcode2.remote=origin
+branch.quellcode2.merge=refs/heads/quellcode2
+branch.quellcode2.1.remote=origin
+branch.quellcode2.1.merge=refs/heads/quellcode2.1
